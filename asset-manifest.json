@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.4b754ea6.css",
+    "main.js": "/my-app/static/js/main.1f57ee67.js",
+    "static/js/453.ed3810f9.chunk.js": "/my-app/static/js/453.ed3810f9.chunk.js",
+    "static/media/aurora-borealis-milky-way-purple-sky-night-starry-sky-3840x2160-50 (1).jpg": "/my-app/static/media/aurora-borealis-milky-way-purple-sky-night-starry-sky-3840x2160-50 (1).83947e752a436fc1ab39.jpg",
+    "static/media/logo-no-background.png": "/my-app/static/media/logo-no-background.dae791768d18084e1e75.png",
+    "static/media/WhatsApp Image 2024-05-16 at 10.12.08_6045bc7c.jpg": "/my-app/static/media/WhatsApp Image 2024-05-16 at 10.12.08_6045bc7c.9504a697e6e1dddcf4cd.jpg",
+    "static/media/achivement-logo.png": "/my-app/static/media/achivement-logo.cfaed83c57ed035c6610.png",
+    "static/media/project-logo.png": "/my-app/static/media/project-logo.c447132298adee893dc7.png",
+    "static/media/memorry.png": "/my-app/static/media/memorry.da7bddf497af47675c9a.png",
+    "index.html": "/my-app/index.html",
+    "main.4b754ea6.css.map": "/my-app/static/css/main.4b754ea6.css.map",
+    "main.1f57ee67.js.map": "/my-app/static/js/main.1f57ee67.js.map",
+    "453.ed3810f9.chunk.js.map": "/my-app/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b754ea6.css",
+    "static/js/main.1f57ee67.js"
+  ]
+}
