@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.containers {
+  background-color: transparent;
+  height: fit-content;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  justify-content: space-between;
+}
+@keyframes border {
+  from{
+    border: none;
+  }
+  to{
+    border: 0.2vh solid plum;
+
+  }
+}
+.cards {
+  width: 85vw;
+  display: flex;
+  flex-direction: row;
+  gap: 13em;
+  justify-content: center;
+  margin-left: 1.5em;
+  /* border: 2px solid wheat; */
+  border-radius: 15px;
+  margin-top: 5.5em;
+  /* justify-content: space-between; */
+}
+.skill {
+  background-color: rgb(39, 38, 38);
+  border: 2px solid plum;
+  border-radius: 10px;
+  width: 11vw;
+  height: 31vh;
+}
+
+h3 {
+  background-color: wheat;
+  border-radius: 20px;
+  margin: -1em;
+}
+#html {
+  background-image: url(html.png);
+  background-size: cover;
+  background-position: center;
+  animation-name: shadow;
+  animation-duration: 2s;
+  background-color: rgb(52, 49, 49);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  transition: all ease 2s;
+
+}
+#css {
+  background-image: url(css.png);
+  background-size: cover;
+  background-position: center;
+  animation-name: shadow;
+  animation-duration: 2s;
+  background-color: rgb(52, 49, 49);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  transition: all ease 2s;
+
+}
+#js {
+  background-image: url(js.png);
+  background-size: cover;
+  animation-name: shadow;
+  animation-duration: 2s;
+  background-color: rgb(52, 49, 49);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  transition: all ease 2s;
+  background-position: center;
+
+}
+#react {
+  background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*x0d41ns8PTQZz4a3VbMrBg.png);
+  background-size: cover;
+  background-position: center;
+  animation-name: shadow;
+  animation-duration: 2s;
+  background-color: rgb(52, 49, 49);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  transition: all ease 2s;
+  animation-delay: 1s;
+}
+
+#java {
+  background-image: url(data:image/png;base64,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);
+  background-size: cover;
+  background-position: center;
+  animation-name: shadow;
+  animation-duration: 2s;
+  background-color: rgb(52, 49, 49);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  transition: all ease 2s;
+  animation-delay: 3s;
+}
+
+#python {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3auoyO2imm4afmsrulq0mvCyHEuyTjYb67sLFoyn2fYy_3MBDeitfJII4uEsvjGlrn6M&usqp=CAU);
+  background-size: cover;
+  background-position: center;
+  animation-name: shadow;
+  animation-duration: 2s;
+  background-color: rgb(52, 49, 49);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  transition: all ease 2s;
+  animation-delay: 1s;
+}
+#node {
+  background-image: url(https://c0.klipartz.com/pngpicture/306/37/gratis-png-el-logotipo-de-node-js-el-software-informatico-express-js-de-la-aplicacion-web-node-js-javascript.png);
+  background-size: cover;
+  background-position: center;
+  animation-name: shadow;
+  animation-duration: 2s;
+  background-color: rgb(52, 49, 49);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  transition: all ease 2s;
+  animation-delay: 1s;
+}
+#Express {
+  background-image: url(https://5.imimg.com/data5/SELLER/Default/2023/10/354311074/SW/ST/XA/64185218/chinese-language-course-500x500.png);
+  background-size: cover;
+  background-position: center;
+  animation-name: shadow;
+  animation-duration: 2s;
+  background-color: rgb(52, 49, 49);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  transition: all ease 2s;
+  animation-delay: 2s;
+}
+#mongodb {
+  background-image: url(https://images.ctfassets.net/23aumh6u8s0i/6wTbGkTM3EBoO6hytvOcXj/d0144f86227382219fd2c8f4f53499c6/illustration);
+  background-size: cover;
+  background-position: center;
+  animation-name: shadow;
+  animation-duration: 2s;
+  background-color: rgb(52, 49, 49);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  transition: all ease 2s;
+  animation-delay: 2s;
+}
+
+#Flask{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzxA3OTb1yupj6ydTNikY3SFJyDtptEl40WWCgQ11bQ&s);
+    background-size: cover;
+    background-position: center;
+    animation-name: shadow;
+    animation-duration: 2s;
+    background-color: rgb(52, 49, 49);
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    transition: all ease 2s;
+    animation-delay: 2s;
+}
+#c{
+    background-image: url(https://www.guvi.in/blog/wp-content/uploads/2023/10/C-Programming-1200x675.webp);
+    background-size: cover;
+    background-position: center;
+    animation-name: shadow;
+    animation-duration: 2s;
+    background-color: rgb(52, 49, 49);
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    transition: all ease 2s;
+    animation-delay: 3s;
+}
+#cpp{
+    background-image: url(https://miro.medium.com/v2/resize:fit:1400/0*sZ1IzKNMKqOSbwHU.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-name: shadow;
+    animation-duration: 2s;
+    background-color: rgb(52, 49, 49);
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    transition: all ease 2s;
+    animation-delay: 3s;
+}
+.thick{
+  /* background-color: antiquewhite; */
+  height: 10vh;
+  width: 75vw;
+margin-top: 10%;
+margin-bottom: -1em;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.thin{
+  height: 0.2vh;
+  background-color: #dda0dd;
+  width: 80vw;
+  filter: drop-shadow(0px 12px 10px #dda0dd);
+  animation-name: width;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transition: all ease-in-out 1.5s;
+}
+.naam{
+  color: plum;
+  align-self: center;
+  font-size: 1.8em;
+  background-color: #1e1c1c;
+  margin-bottom: -1.6em;
+  z-index: 1;
+  border-radius: 15px;
+  width: 25vw;
+  /* border: 0.2vh solid plum; */
+  margin-top: 3em;
+
+}
+.naame{
+  color: plum;
+  align-self: center;
+  font-size: 1.8em;
+  background-color: #1e1c1c;
+  margin-bottom: -2.6em;
+  z-index: 1;
+  border-radius: 15px;
+  width: 80vw;
+  /* border: 0.2vh solid plum; */
+  margin-top: 1.5em;
+}
+
+@keyframes width {
+  from {
+    width: 0;
+  }to{
+    width: 65vw;
+  }
+}
+@media only screen and (max-width: 402px) {
+.naam{
+  width: 82vw;
+  font-size: 1.8em;
+  margin-bottom: 0.2em;
+  margin-top: 2.6em;
+  border: none;
+}
+.skill{
+  width: 25vw;
+  filter: none;
+  height: 15vh;
+}
+.containers{
+  /* background-color: aliceblue; */
+  gap: 0.2em;
+  margin-top: 0.8em;
+}
+.cards{
+  /* background-color: red; */
+margin-left: 0;
+align-self: center;
+gap: 0.5em;
+margin-top: 0.8em;
+
+/* border-color: wheat; */
+}
+.naame{
+  width: 90vw;
+  font-size: 1.2m;
+  margin-bottom: 0.2em;
+  margin-top: 1em;
+  border: none;
+}
+.thin{
+  /* height: 100vh; */
+  width: inherit;
+  /* width: max-content; */
+  z-index: 2;
+  filter: none;
+  background-color: aqua;
+}
+
+}
+
+.lm{
+  height: 10vh;
+  width: 100%;
+}
+
+
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in-bottom {
+-webkit-animation: fade-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+        animation: fade-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+}
