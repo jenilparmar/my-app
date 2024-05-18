@@ -30,7 +30,7 @@ export default function About() {
               </center>
               <ul className="l">
                 <li>
-                  <a href="https://restauratn-7.onrender.com" target="#" id="g">Restarant Website</a>
+                  <a href="https://restauratn-7.onrender.com" target="#" id="g">Restaurant Website</a>
                 </li>
                 <li>
                   <a href="https://jenilparmar.github.io/TicketBooking/" target="#"> booking Menagement <br /> System</a>
